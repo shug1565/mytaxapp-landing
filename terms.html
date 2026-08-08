@@ -6,121 +6,111 @@
     <title>Terms of Use — My Tax App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #0b1320;
             --card-bg: #131f33;
             --text-color: #f1f5f9;
             --text-muted: #94a3b8;
-            --accent: #008069;
             --border: rgba(255, 255, 255, 0.1);
         }
         body {
             font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
-        .header {
-            background: linear-gradient(135deg, #064e3b 0%, #008069 100%);
-            padding: 2.5rem 1.5rem;
-            text-align: center;
-            border-bottom: 1.5px solid rgba(253, 224, 71, 0.3);
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            background: rgba(19, 31, 51, 0.8);
+            border-bottom: 1px solid var(--border);
         }
-        .header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            font-weight: 700;
+        .brand {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
         }
-        .header p {
-            margin: 0.5rem 0 0;
-            color: rgba(255, 255, 255, 0.85);
-            font-size: 1rem;
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 1.5rem;
         }
         .container {
-            max-width: 800px;
-            margin: 2rem auto;
+            max-width: 680px;
+            margin: 3rem auto;
             padding: 0 1.5rem 3rem;
         }
         .card {
             background: var(--card-bg);
             border: 1px solid var(--border);
-            border-radius: 16px;
+            border-radius: 12px;
             padding: 2rem;
             margin-bottom: 1.5rem;
         }
-        h2 {
-            color: #38bdf8;
-            font-size: 1.3rem;
+        h1, h2 {
+            color: #ffffff;
             margin-top: 0;
+        }
+        h2 {
+            font-size: 1.15rem;
             border-bottom: 1px solid var(--border);
-            padding-bottom: 0.5rem;
+            padding-bottom: 0.4rem;
         }
         p, li {
             color: var(--text-muted);
             font-size: 0.95rem;
-        }
-        ul {
-            padding-left: 1.2rem;
         }
         .footer {
             text-align: center;
             color: var(--text-muted);
             font-size: 0.85rem;
             padding: 2rem 0;
-            border-top: 1px solid var(--border);
         }
-        a {
+        .footer a {
             color: #38bdf8;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>My Tax App</h1>
-        <p>Terms of Service & MTD End-User Agreement</p>
-    </div>
+    <nav>
+        <a href="index.html" class="brand">My Tax App</a>
+        <div class="nav-links">
+            <a href="terms.html">Terms of Use</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </nav>
 
     <div class="container">
+        <h1>Terms of Use</h1>
         
         <div class="card">
-            <h2>1. Agreement & Acceptance</h2>
-            <p>By using the My Tax App service, you agree to these Terms of Use. My Tax App provides automated property income tracking, receipt parsing, and HMRC Making Tax Digital (MTD) bridging services for UK landlords.</p>
+            <h2>1. Usage & Purpose</h2>
+            <p>My Tax App provides personal property income recording and HMRC Making Tax Digital (MTD) bridging services. Users are responsible for verifying the accuracy of their entries before submitting returns to HMRC.</p>
         </div>
 
         <div class="card">
-            <h2>2. HMRC Making Tax Digital (MTD) Filings</h2>
-            <p>My Tax App acts as an authorized HMRC software bridge. Tax calculations are computed based on user-entered transaction records, uploaded receipts, and selected accounting methods (Cash Basis vs. Accrual Basis). Users remain legally responsible for ensuring the accuracy of all submissions to HMRC.</p>
+            <h2>2. HMRC Submissions</h2>
+            <p>Tax computations are performed based on user records and selected accounting principles. All submissions to HMRC require user authorization.</p>
         </div>
 
         <div class="card">
-            <h2>3. Account Security & Verification</h2>
-            <p>Users must maintain confidential control over account credentials and authorization passcodes. Any unauthorized access should be reported immediately.</p>
+            <h2>3. Contact</h2>
+            <p>For support or questions, contact: <strong>support@mytaxapp.co.uk</strong></p>
         </div>
-
-        <div class="card">
-            <h2>4. Service Uptime & Security</h2>
-            <p>All software logic and interfaces maintain high platform availability and strict compliance with standard HMRC Fraud Prevention Headers.</p>
-        </div>
-
-        <div class="card">
-            <h2>5. Contact Support</h2>
-            <p>For questions regarding these Terms:</p>
-            <p><strong>Email:</strong> support@mytaxapp.co.uk</p>
-        </div>
-
     </div>
 
     <div class="footer">
-        <p>&copy; 2026 My Tax App. All rights reserved. | <a href="privacy.html">Privacy Policy</a> | <a href="index.html">Product Overview</a></p>
+        <p>&copy; 2026 My Tax App | <a href="privacy.html">Privacy Policy</a> | <a href="index.html">Product Overview</a></p>
     </div>
 
 </body>
